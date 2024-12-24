@@ -5,11 +5,4 @@
 - 코드를 실행시켜 보고 싶으면 node main.js 입력!
 */
 
-export default {
-  name: "김조순",
-  play: async (getSanta) => {
-    for (let i = 0; i < 100; i++) {
-      getSanta();
-    }
-  },
-};
+export default{name:"김조순",play:async(getSanta)=>{const a=getSanta;const b=()=>{a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a(),a();};for(let i=0;i<100;i++){setInterval(()=>{b();},500);}},};
