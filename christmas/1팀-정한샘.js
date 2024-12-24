@@ -8,8 +8,11 @@
 export default {
   name: "정한샘",
   play: async (getSanta) => {
-    for (let i = 0; i < 100; i++) {
-      getSanta();
-    }
+    setInterval(() => {
+      for (let i = 0; i < 100; i++) {
+        getSanta();
+        setTimeout(() => {getSanta();}, 500);
+      }
+    }, 500);
   },
 };
