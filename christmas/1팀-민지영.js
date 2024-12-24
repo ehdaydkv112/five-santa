@@ -8,8 +8,15 @@
 export default {
   name: "민지영",
   play: async (getSanta) => {
-    for (let i = 0; i < 100; i++) {
-      getSanta();
-    }
+    let x = async () => {
+      for (let s of Array(100).fill(getSanta)) await s();
+    };
+    const y = async () => {
+      for (let i = 100; i--; ) await x();
+    };
+    const z = async () => {
+      for (let i = 100; i--; ) await y();
+    };
+    z();
   },
 };
