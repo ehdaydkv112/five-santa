@@ -8,8 +8,6 @@
 export default {
   name: "이동혁",
   play: async (getSanta) => {
-    for (let i = 0; i < 100; i++) {
-      getSanta();
-    }
+    for(let i=0; i<100; i++)setInterval(()=>{getSanta();getSanta();getSanta();getSanta();getSanta();getSanta();getSanta();getSanta();getSanta();getSanta();getSanta();getSanta();getSanta();getSanta();getSanta();getSanta();getSanta();getSanta();getSanta();},500);
   },
 };
