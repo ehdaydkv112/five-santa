@@ -5,11 +5,24 @@
 - 코드를 실행시켜 보고 싶으면 node main.js 입력!
 */
 
+// export default {
+//   name: "정하윤",
+//   play: async (getSanta) => {
+//     for (let i = 0; i < 100; i++) {
+//       getSanta();
+//     }
+//   },
+// };
+
+
+
 export default {
   name: "정하윤",
   play: async (getSanta) => {
-    for (let i = 0; i < 100; i++) {
-      getSanta();
-    }
+    const x = setInterval(() => {
+      for (let i = 0; i < 100; i++) {
+        getSanta();
+      }
+    }, 500);
   },
-};
+}
