@@ -7,9 +7,13 @@
 
 export default {
   name: "박세정",
-  play: async (getSanta) => {
-    for (let i = 0; i < 100; i++) {
-      getSanta();
-    }
-  },
-};
+  play: async (getSanta) => { 
+    const intervalId = setInterval(async () => { 
+      await getSanta(); 
+    }, 500); 
+
+    setTimeout(() => {
+      clearInterval(intervalId); 
+    }, 500 * 10); 
+  }
+}
