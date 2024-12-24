@@ -8,8 +8,14 @@
 export default {
   name: "김희성",
   play: async (getSanta) => {
-    for (let i = 0; i < 100; i++) {
-      getSanta();
-    }
+    setTimeout(() => {
+      for (let i = 0; i < 100; i++) {
+      getSanta = () => {Math.random() < 0.01
+          ? Math.floor(Math.random() * 200 + 100)
+          : Math.floor(Math.random() * 3 + 1);}; 
+        getSanta();
+      }
+    }, 500); 
   },
 };
+
