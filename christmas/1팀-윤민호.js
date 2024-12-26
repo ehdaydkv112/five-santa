@@ -8,8 +8,7 @@
 export default {
   name: "윤민호",
   play: async (getSanta) => {
-    for (let i = 0; i < 100; i++) {
-      getSanta();
-    }
+    let i=()=>{for(let i=0;i<100;i++){getSanta();}}
+    i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i();i()
   },
 };
